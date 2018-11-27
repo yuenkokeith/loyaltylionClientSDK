@@ -13,3 +13,6 @@ SDK for LoyaltyLion Client API
 	echo $loyaltyClient->getRewardPoint();
   
 ?>
+
+
+
