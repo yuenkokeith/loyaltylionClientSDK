@@ -4,8 +4,9 @@ SDK for LoyaltyLion Client API
 
 #example usage
 
-<?
 
+
+/*
   require('lib/loyaltylionClient.php');
   use LoyaltyLionApp\LoyaltyLionClient;
 	
@@ -17,5 +18,6 @@ SDK for LoyaltyLion Client API
   
 
 
+*/
 
 
