@@ -37,11 +37,30 @@ namespace LoyaltyLionApp;
 			return $this->resultArr;
 		}
 		
-		public function getRewardPoint() {
+		public function getRewardPoint($customeremail) {
+			$this->sendRequest($this->url_customer, "email", $customeremail);
 			if($this->resultArr==null) {
 				return "No data.";
 			} else {
 				return $this->resultArr['customers'][0]['points_approved'];
+			}
+		}
+		
+		public function getRewardPointPending() {
+			$this->sendRequest($this->url_customer, "email", $customeremail);
+			if($this->resultArr==null) {
+				return "No data.";
+			} else {
+				return $this->resultArr['customers'][0]['points_pending'];
+			}
+		}
+		
+		public function getRewardPointSpent() {
+			$this->sendRequest($this->url_customer, "email", $customeremail);
+			if($this->resultArr==null) {
+				return "No data.";
+			} else {
+				return $this->resultArr['customers'][0]['points_spent'];
 			}
 		}
 		
